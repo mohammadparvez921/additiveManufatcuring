@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Additive manufacturing predictor</title>
+</head>
+<body>
+
+  <!-- navbar -->
+  <div class="NavBar">
+    <img src="./img/AM-logo_RGB_500.png"/>
+  </div>
+  <!-- navbar ends -->
+
+
+    <div class="content-area">
+      <div class="box1">
+        <div id="AM">
+     <h2 style="color:white" >WHAT IS ADDITIVE MANUFACTURING?</h2>
+     <p style="color:white"> Additive Manufacturing is new technologies to cut time to market of a product. Rapid prototyping
+      technology has the ability to cut the design-to market time by 75%, or more in some cases.
+      </p>
+       </div>
+      <div>
+
+
+
+
+
+
+      </div>
+     </div>
+     <div class="box2">
+      <div id="AM">
+      <h2 style="color: rgb(53, 50, 50)">SELECTION OF AM TECHNOLOGY</h2>
+      <P>The selection of Advanced Manufacturing Technologies (AMTs) is a hard and complex task
+        because of the various attributes involved. Selection of an appropriate technology is
+        becoming an increasing difficult task for organizations intending to adopt the technology to
+        serve their specific needs.
+        There are a large number of RP systems available in market and number is increasing
+        with time. Different users will require different things from an RP machine. Machines vary in
+        terms of cost, size, range of build material, accuracy of the part, build envelope, time of build,
+        surface finish and application etc. Manufacturers of RP systems are biased toward their own
+        product. Conventions and exhibitions are a good way to make comparisons. But this does
+        not identify usability of machine.</P>
+      </div>
+
+
+      </div>
+
+       <div class="box3">
+        <h2 style="color: rgb(53, 50, 50)">ANALYTIC HIERARCHY PROCESS </h2>
+        <p>The Analytic Hierarchic Process (AHP) provides a framework to  cope with multiple criteria
+          situations involving intuitive, rational, qualitative and quantitative aspects. It first structures
+          the problem in the form of a hierarchy to capture the basic elements of a problem and then
+          derives ratio scales to integrate the perceptions and purposes into a synthesis.
+          AHP is developed by Saaty and Kearn (1985). Now, these judgments are
+          translated to numbers step-by-step AHP can be described as follows:
+          Step 1:- Define the problem and objective<br>
+          Step 2:- Structure the hierarchy from top (the objectives) through the  intermediate level
+          (criteria on which subsequent level depends) to lowest level (list of alternatives).<br>
+          Step 3:- Make pair wise comparison of matrix for lower level elements. Make the
+          comparison of elements in lower level based on their effects on the governing elements.
+          This gives a square matrix of judgments. The pair wise comparisons are done element’s
+          dominance on other element.<br>
+          Step 4:- There are n(n-1)/2 judgment decision needed to develop each matrix.<br>
+          Step 5:- Now, consistency is determined using Eigen value. Then, consistency ratios
+          are calculated.<br>
+          Step 6:- Step 3, 4, 5, are followed for all levels in hierarchy.<br>
+          Step 7:- Now, this synthesis is employed to weight the Eigen vectors by weights of
+          criteria. Sum is taken over all weighted Eigen vector entries corresponding to those in next
+          lower level of the hierarchy.<br>
+          Step 8:- Now, consistency of entire hierarchy is obtained by multiplying each
+          consistency index by priority of the corresponding criterion and adding them together. The
+          result is then divided by the same type of expression using the random consistency index,
+          corresponding to the dimension of each matrix, weighted by priorities as before.
+          The scale of relative importance as given by Saaty [12] is given in Table I.
+          </p>
+           
+        </div>
+  <div  class="Images-part1">
+   <div>
+    <img src="./img/image-1.jpeg">
+   </div>
+   <div>
+    <img src="./img/image-2.jpeg">
+   </div>
+  
+  </div>
+  <div class="Images-part2">
+
+    <div>
+      <img src="./img/image-3.jpeg">
+     </div>
+     <div>
+      <img src="./img/image-4.jpeg">
+     </div>
+  </div>
+
+        
+    </div>
+
+
+
+
+
+<!-- predictor -->
+<div  class="clsOfPredictors">
+  
+  
+
+<!-- first table -->
+  <div  class="main-body" id="predictor">
+   <input  id="table1-row1" type="number"    placeholder="Prod. req. issues vs Process req. issues">
+   <input  id="table1-row2" type="number"  placeholder="Prod req. issues vs Social & env. issues">
+   <input  id="table1-row3" type="number"   placeholder="Prod. req. issues vs other issues of comp.">
+   <input  id="table1-row4" type="number"   placeholder="Process req. issues vs Social req. issues">
+   <input  id="table1-row5" type="number"   placeholder="Process req. issues vs other issues of comp">
+   <input  id="table1-row6" type="number"   placeholder="Social issues and env. VS other issues of comp.">
+   <button id="myBtn" onclick="myCreateFunction1()">Get Table</button>
+</div>
+
+<!-- second table -->
+<div  class="main-body" id="predictor">
+  <!-- <h1>Table 2</h1> -->
+ <input  id="table2-row1" placeholder="speed VS variety">
+ <input  id="table2-row2" placeholder="speed VS surface-finish">
+ <input  id="table2-row3"  placeholder="speed VS prod. cost">
+ <input  id="table2-row4"  placeholder="speed VS price">
+ <input  id="table2-row5"  placeholder="speed VS max-part-size">
+ <input  id="table2-row6"  placeholder="variety VS surface finish">
+ <input  id="table2-row7"  placeholder="variety VS prod. cost">
+ <input  id="table2-row8"  placeholder="variety VS price">
+ <input  id="table2-row9"  placeholder="variety VS max-part-size">
+ <input  id="table2-row10"  placeholder="surface-finish VS prod.-cost">
+ <input  id="table2-row11"  placeholder="surface-finish VS price">
+ <input  id="table2-row12"  placeholder="surface-finish VS max-part-size">
+ <input  id="table2-row13"  placeholder="prod. cost VS price">
+ <input  id="table2-row14"  placeholder="prod. cost VS max-part-size">
+ <input  id="table2-row15"  placeholder="price VS max-part-size">
+ <button id="myBtn" onclick="myCreateFunction2()">Get Table</button>
+</div>
+
+
+<!-- third table -->
+<div  class="main-body" id="predictor">
+  <!-- <h1>Table 3</h1> -->
+ <input  id="table3-row1" placeholder="Employeeskill VS officeFreindliness">
+ <input  id="table3-row2" placeholder="Employeeskill VS hazardRecycling">
+ <input  id="table3-row3"  placeholder="office friendliness VS hazardRecycling">
+
+ <button id="myBtn" onclick="myCreateFunction3()">Get Table</button>
+</div>
+
+<!-- fourth table -->
+
+<div  class="main-body" id="predictor">
+  <!-- <h1>Table 4</h1> -->
+ <input  id="table4-row1" placeholder="Relaibility VS LocationOfAvailibilityOfTechnology">
+ <input  id="table4-row2" placeholder="Relaibility VS MaturityLevelOfTechnology">
+ <input  id="table4-row3"  placeholder="Relaibility VS Flexibility">
+ <input  id="table4-row4"  placeholder="LocationOfAvailibilityOfTechnology VS MaturityLevelOfTechnology">
+ <input  id="table4-row5"  placeholder="LocationOfAvailibilityOfTechnology VS Flexibility">
+ <input  id="table4-row6"  placeholder="MaturityLevelOfTechnology VS Flexibility">
+ <button id="myBtn" onclick="myCreateFunction4()">Get Table</button>
+</div>
+
+<!-- fifth table -->
+<div  class="main-body" id="predictor">
+  <!-- <h1>Table 5</h1> -->
+ <input  id="table5-row1" placeholder="Strategic val. VS Product Quality improvement potential">
+ <input  id="table5-row2" placeholder="Strategic val. VS Lead Time improvement potential">
+ <input  id="table5-row3"  placeholder="Strategic val. VS costs improvement potential">
+ <input  id="table5-row4"  placeholder="Product Quality improvement potential VS Lead Time improvement potential ">
+ <input  id="table5-row5"  placeholder="Product Quality improvement potential VS costs improvement potential">
+ <input  id="table5-row6"  placeholder=" Lead Time improvement potential VS costs improvement potential ">
+ <button id="myBtn" onclick="myCreateFunction5()">Get Table</button>
+</div>
+
+
+
+
+</div>
+
+<!-- predictor end -->
+
+<div class="final-table">
+
+  <div class="SLA">
+    <h1>SLA</h1>
+    <input  id="SLA-row1" placeholder="UR-Speed">
+    <input  id="SLA-row2" placeholder="UR-Variety">
+    <input  id="SLA-row3"  placeholder="UR-Surface-finish">
+    <input  id="SLA-row4"  placeholder="UR-prod. cost">
+    <input  id="SLA-row5"  placeholder="UR-price">
+    <input  id="SLA-row6"  placeholder="UR-max-part-size">
+    <input  id="SLA-row7" placeholder="UR-relaibility">
+    <input  id="SLA-row8" placeholder="UR-avail-tech">
+    <input  id="SLA-row9"  placeholder="UR-maturity-tech">
+    <input  id="SLA-row10"  placeholder="UR-flexibilty">
+    <input  id="SLA-row11"  placeholder="UR-employeeSkill">
+    <input  id="SLA-row12"  placeholder="UR-OfficeFriendliness">
+    <input  id="SLA-row13" placeholder="UR-hazardRecycling">
+    <input  id="SLA-row14" placeholder="UR-strategicVal">
+    <input  id="SLA-row15"  placeholder="UR-ProductQuality">
+    <input  id="SLA-row16"  placeholder="UR-LeadTimeImprovement">
+    <input  id="SLA-row17"  placeholder="UR-CostsImprovementPot.">
+   
+  </div>
+
+  <div class="SLS">
+    <h1>SLS</h1>
+    <input  id="SLS-row1" placeholder="UR-Speed">
+    <input  id="SLS-row2" placeholder="UR-Variety">
+    <input  id="SLS-row3"  placeholder="UR-Surface-finish">
+    <input  id="SLS-row4"  placeholder="UR-prod. cost">
+    <input  id="SLS-row5"  placeholder="UR-price">
+    <input  id="SLS-row6"  placeholder="UR-max-part-size">
+    <input  id="SLS-row7" placeholder="UR-relaibility">
+    <input  id="SLS-row8" placeholder="UR-avail-tech">
+    <input  id="SLS-row9"  placeholder="UR-maturity-tech">
+    <input  id="SLS-row10"  placeholder="UR-flexibilty">
+    <input  id="SLS-row11"  placeholder="UR-employeeSkill">
+    <input  id="SLS-row12"  placeholder="UR-OfficeFriendliness">
+    <input  id="SLS-row13" placeholder="UR-hazardRecycling">
+    <input  id="SLS-row14" placeholder="UR-strategicVal">
+    <input  id="SLS-row15"  placeholder="UR-ProductQuality">
+    <input  id="SLS-row16"  placeholder="UR-LeadTimeImprovement">
+    <input  id="SLS-row17"  placeholder="UR-CostsImprovementPot.">
+   
+
+    
+  </div>
+  
+
+  <div class="FDM">
+    <h1>FDM</h1>
+    <input  id="FDM-row1" placeholder="UR-Speed">
+    <input  id="FDM-row2" placeholder="UR-Variety">
+    <input  id="FDM-row3"  placeholder="UR-Surface-finish">
+    <input  id="FDM-row4"  placeholder="UR-prod. cost">
+    <input  id="FDM-row5"  placeholder="UR-price">
+    <input  id="FDM-row6"  placeholder="UR-max-part-size">
+    <input  id="FDM-row7" placeholder="UR-relaibility">
+    <input  id="FDM-row8" placeholder="UR-avail-tech">
+    <input  id="FDM-row9"  placeholder="UR-maturity-tech">
+    <input  id="FDM-row10"  placeholder="UR-flexibilty">
+    <input  id="FDM-row11"  placeholder="UR-employeeSkill">
+    <input  id="FDM-row12"  placeholder="UR-OfficeFriendliness">
+    <input  id="FDM-row13" placeholder="UR-hazardRecycling">
+    <input  id="FDM-row14" placeholder="UR-strategicVal">
+    <input  id="FDM-row15"  placeholder="UR-ProductQuality">
+    <input  id="FDM-row16"  placeholder="UR-LeadTimeImprovement">
+    <input  id="FDM-row17"  placeholder="UR-CostsImprovementPot.">
+   
+
+    
+  </div>
+
+  <div class="LOM">
+    <h1>LOM</h1>
+    <input  id="LOM-row1" placeholder="UR-Speed">
+    <input  id="LOM-row2" placeholder="UR-Variety">
+    <input  id="LOM-row3"  placeholder="UR-Surface-finish">
+    <input  id="LOM-row4"  placeholder="UR-prod. cost">
+    <input  id="LOM-row5"  placeholder="UR-price">
+    <input  id="LOM-row6"  placeholder="UR-max-part-size">
+    <input  id="LOM-row7" placeholder="UR-relaibility">
+    <input  id="LOM-row8" placeholder="UR-avail-tech">
+    <input  id="LOM-row9"  placeholder="UR-maturity-tech">
+    <input  id="LOM-row10"  placeholder="UR-flexibilty">
+    <input  id="LOM-row11"  placeholder="UR-employeeSkill">
+    <input  id="LOM-row12"  placeholder="UR-OfficeFriendliness">
+    <input  id="LOM-row13" placeholder="UR-hazardRecycling">
+    <input  id="LOM-row14" placeholder="UR-strategicVal">
+    <input  id="LOM-row15"  placeholder="UR-ProductQuality">
+    <input  id="LOM-row16"  placeholder="UR-LeadTimeImprovement">
+    <input  id="LOM-row17"  placeholder="UR-CostsImprovementPot.">
+   
+
+    
+  </div>
+
+  <div class="3DP">
+    <h1>3DP</h1>
+    <input  id="3DP-row1" placeholder="UR-Speed">
+    <input  id="3DP-row2" placeholder="UR-Variety">
+    <input  id="3DP-row3"  placeholder="UR-Surface-finish">
+    <input  id="3DP-row4"  placeholder="UR-prod. cost">
+    <input  id="3DP-row5"  placeholder="UR-price">
+    <input  id="3DP-row6"  placeholder="UR-max-part-size">
+    <input  id="3DP-row7" placeholder="UR-relaibility">
+    <input  id="3DP-row8" placeholder="UR-avail-tech">
+    <input  id="3DP-row9"  placeholder="UR-maturity-tech">
+    <input  id="3DP-row10"  placeholder="UR-flexibilty">
+    <input  id="3DP-row11"  placeholder="UR-employeeSkill">
+    <input  id="3DP-row12"  placeholder="UR-OfficeFriendliness">
+    <input  id="3DP-row13" placeholder="UR-hazardRecycling">
+    <input  id="3DP-row14" placeholder="UR-strategicVal">
+    <input  id="3DP-row15"  placeholder="UR-ProductQuality">
+    <input  id="3DP-row16"  placeholder="UR-LeadTimeImprovement">
+    <input  id="3DP-row17"  placeholder="UR-CostsImprovementPot.">
+   
+
+    
+  </div>
+
+  <div class="SGC">
+    <h1>SGC</h1>
+    <input  id="SGC-row1" placeholder="UR-Speed">
+    <input  id="SGC-row2" placeholder="UR-Variety">
+    <input  id="SGC-row3"  placeholder="UR-Surface-finish">
+    <input  id="SGC-row4"  placeholder="UR-prod. cost">
+    <input  id="SGC-row5"  placeholder="UR-price">
+    <input  id="SGC-row6"  placeholder="UR-max-part-size">
+    <input  id="SGC-row7" placeholder="UR-relaibility">
+    <input  id="SGC-row8" placeholder="UR-avail-tech">
+    <input  id="SGC-row9"  placeholder="UR-maturity-tech">
+    <input  id="SGC-row10"  placeholder="UR-flexibilty">
+    <input  id="SGC-row11"  placeholder="UR-employeeSkill">
+    <input  id="SGC-row12"  placeholder="UR-OfficeFriendliness">
+    <input  id="SGC-row13" placeholder="UR-hazardRecycling">
+    <input  id="SGC-row14" placeholder="UR-strategicVal">
+    <input  id="SGC-row15"  placeholder="UR-ProductQuality">
+    <input  id="SGC-row16"  placeholder="UR-LeadTimeImprovement">
+    <input  id="SGC-row17"  placeholder="UR-CostsImprovementPot.">
+   
+
+    
+  </div>
+
+
+</div>
+
+<!-- table1 started -->
+<button id="myBtn" onclick="finalFunction()">Get result</button>
+<div id="tables">
+  <table id="table6">
+  
+  
+  </table>
+  
+  <table id="finalAns">
+  
+  
+  </table>
+<table id="table1">
+  
+  
+</table>
+
+
+<table id="table2">
+  
+  
+</table>
+
+<table id="table3">
+  
+  
+</table>
+
+<table id="table4">
+  
+  
+</table>
+
+<table id="table5">
+  
+  
+</table>
+
+
+
+
+</div>
+<script src="script1.js"> </script>
+<script src="script2.js"> </script>
+<script src="script3.js"> </script>
+<script src="script4.js"> </script>
+<script src="script5.js"> </script>
+<script src="script6.js"> </script>
+</body>
+</html>
