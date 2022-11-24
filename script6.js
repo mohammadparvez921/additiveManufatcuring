@@ -858,4 +858,10 @@ var cell1=row6.insertCell(0);
 var cell2=row6.insertCell(1);
 cell1.innerHTML="SGC";
 cell2.innerHTML=SGCgrandRating;
+
+
+var row7= table1.insertRow(0)
+var cell1=row7.insertCell(0);
+var cell2=row7.insertCell(1);
+cell1.innerHTML="GRAND RATING POINT"
 }
