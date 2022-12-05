@@ -10,7 +10,7 @@ var MaturityLevelOfTechnologyVSflexibility=document.getElementById("table4-row6"
 var sum1Table4=Math.pow((1/RelaibilityVSflexibility*1/LocationOfAvailibilityOfTechnologyVSflexibility*
 1/MaturityLevelOfTechnologyVSflexibility),1/4);
 var sum2Table4=Math.pow((1/RelaibilityVSmaturityLevelOfTechnology*1/LocationOfAvailibilityOfTechnologyVSmaturityLevelOfTechnology
-*1/MaturityLevelOfTechnologyVSflexibility),1/4);
+*MaturityLevelOfTechnologyVSflexibility),1/4);
 var sum3Table4=Math.pow((1/RelaibilityVSlocationOfAvailibilityOfTechnology*LocationOfAvailibilityOfTechnologyVSmaturityLevelOfTechnology
 *LocationOfAvailibilityOfTechnologyVSflexibility),1/4);
 var sum4Table4=Math.pow((RelaibilityVSlocationOfAvailibilityOfTechnology*RelaibilityVSmaturityLevelOfTechnology
@@ -58,7 +58,7 @@ var sumTable4=sum1Table4+sum2Table4+sum3Table4+sum4Table4;
   cell3.innerHTML =1/LocationOfAvailibilityOfTechnologyVSmaturityLevelOfTechnology; 
   cell4.innerHTML =1;
  
-  cell5.innerHTML =1/MaturityLevelOfTechnologyVSflexibility;
+  cell5.innerHTML =MaturityLevelOfTechnologyVSflexibility;
   cell6.innerHTML =sum2Table4 ;
   cell7.innerHTML =sum2Table4/sumTable4 ;
   // row2 ended

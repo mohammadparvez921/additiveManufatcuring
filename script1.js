@@ -37,7 +37,7 @@ function myCreateFunction1() {
   var cell6 = row1.insertCell(5);
   var cell7 = row1.insertCell(6);
   cell1.innerHTML = "Other issues of company";
-  cell2.innerHTML = revrseProductReqVsOtherIssuesOfComp;
+  cell2.innerHTML = 1/productReqVsOtherIssuesOfComp;
   cell3.innerHTML =reverseProcessReqVsOtherIssuesOfComp;
   cell4.innerHTML =reverseSocialIssuesVsOtherIssuesOfComp ;
   cell5.innerHTML = 1;
@@ -56,10 +56,10 @@ function myCreateFunction1() {
   var cell6 = row2.insertCell(5);
   var cell7 = row2.insertCell(6);
   cell1.innerHTML = "Social & Env issues";
-  cell2.innerHTML =revrseProductReqVsOtherIssuesOfComp;
-  cell3.innerHTML =reverseProcessReqVsOtherIssuesOfComp;
+  cell2.innerHTML =reverseProductReqVsSocialEnv;
+  cell3.innerHTML =1/processReqVsSocialReqIssues;
   cell4.innerHTML = 1;
-  cell5.innerHTML = reverseSocialIssuesVsOtherIssuesOfComp;
+  cell5.innerHTML = reverseProcessReqVsSocialReqIssues;
   cell6.innerHTML = sum3;
   cell7.innerHTML = sum3/sum;
   // row2 ended

@@ -6,7 +6,7 @@ var employeeSkillVSofficeFreindliness=document.getElementById("table3-row1").val
 var employeeSkillVShazardrecycling=document.getElementById("table3-row2").value;
 var officeVShazardrecycling=document.getElementById("table3-row3").value;
 var sum1Table3=Math.pow((1/employeeSkillVShazardrecycling*1/officeVShazardrecycling),1/3);
-var sum2Table3=Math.pow((1/employeeSkillVShazardrecycling*officeVShazardrecycling),1/3);
+var sum2Table3=Math.pow((1/employeeSkillVSofficeFreindliness*officeVShazardrecycling),1/3);
 var sum3Table3=Math.pow((employeeSkillVSofficeFreindliness*employeeSkillVShazardrecycling),1/3);
 var sumTable3=sum1Table3+sum2Table3+sum3Table3;
 

@@ -39,15 +39,15 @@ var prodCostVSmaxPartSize=document.getElementById("table2-row14").value;
 var priceVSmaxPartSize=document.getElementById("table2-row15").value;
 var sum1Table2=Math.pow((1/speedVSmaxPartSize*1/varietyVSmaxPartSize*1/surfaceFinishVSmaxPartSize*1/prodCostVSmaxPartSize*
   1/priceVSmaxPartSize),1/6);
-var sum2Table2=Math.pow((1/speedVSmaxPartSize*1/varietyVSmaxPartSize*1/surfaceFinishVSmaxPartSize*
-1/prodCostVSmaxPartSize*priceVSmaxPartSize),1/6);
-var sum3Table2=Math.pow((1/speedVSprodCost*1/varietyVSprodCost*1/surfaceFinishVSprodCost *prodCostVSprice
-*prodCostVSmaxPartSize),1/6);
-var sum4Table2=Math.pow((1/speedVSsurfaceFinish*1/varietyVSsurfaceFinish*surfaceFinishVSprodCost*surfaceFinishVSprice
-*surfaceFinishVSmaxPartSize),1/6);
-var sum5Table2=Math.pow((1/speedVSvariety*varietyVSsurfaceFinish*varietyVSprodCost
-*speedVSprice*varietyVSmaxPartSize),1/6);
-var sum6Table2=Math.pow((speedVSvariety*speedVSsurfaceFinish*speedVSprodCost*speedVSprice*speedVSmaxPartSize),1/6);
+  var sum2Table2=Math.pow((1/speedVSprice*1/varietyVSprice*1/surfaceFinishVSprice*
+  1/prodCostVSprice*priceVSmaxPartSize),1/6);
+  var sum3Table2=Math.pow((1/speedVSprodCost*1/varietyVSprodCost*1/surfaceFinishVSprodCost *prodCostVSprice
+  *prodCostVSmaxPartSize),1/6);
+  var sum4Table2=Math.pow((1/speedVSsurfaceFinish*1/varietyVSsurfaceFinish*surfaceFinishVSprodCost*surfaceFinishVSprice
+  *surfaceFinishVSmaxPartSize),1/6);
+  var sum5Table2=Math.pow((1/speedVSvariety*varietyVSsurfaceFinish*varietyVSprodCost
+  *varietyVSprice*varietyVSmaxPartSize),1/6);
+  var sum6Table2=Math.pow((speedVSvariety*speedVSsurfaceFinish*speedVSprodCost*speedVSprice*speedVSmaxPartSize),1/6);
 var sumTable2=sum1Table2+sum2Table2+sum3Table2+sum4Table2+sum5Table2;
 
 // table2 ends
@@ -57,7 +57,7 @@ var employeeSkillVSofficeFreindliness=document.getElementById("table3-row1").val
 var employeeSkillVShazardrecycling=document.getElementById("table3-row2").value;
 var officeVShazardrecycling=document.getElementById("table3-row3").value;
 var sum1Table3=Math.pow((1/employeeSkillVShazardrecycling*1/officeVShazardrecycling),1/3);
-var sum2Table3=Math.pow((1/employeeSkillVShazardrecycling*officeVShazardrecycling),1/3);
+var sum2Table3=Math.pow((1/employeeSkillVSofficeFreindliness*officeVShazardrecycling),1/3);
 var sum3Table3=Math.pow((employeeSkillVSofficeFreindliness*employeeSkillVShazardrecycling),1/3);
 var sumTable3=sum1Table3+sum2Table3+sum3Table3;
 
@@ -74,7 +74,7 @@ var MaturityLevelOfTechnologyVSflexibility=document.getElementById("table4-row6"
 var sum1Table4=Math.pow((1/RelaibilityVSflexibility*1/LocationOfAvailibilityOfTechnologyVSflexibility*
 1/MaturityLevelOfTechnologyVSflexibility),1/4);
 var sum2Table4=Math.pow((1/RelaibilityVSmaturityLevelOfTechnology*1/LocationOfAvailibilityOfTechnologyVSmaturityLevelOfTechnology
-*1/MaturityLevelOfTechnologyVSflexibility),1/4);
+*MaturityLevelOfTechnologyVSflexibility),1/4);
 var sum3Table4=Math.pow((1/RelaibilityVSlocationOfAvailibilityOfTechnology*LocationOfAvailibilityOfTechnologyVSmaturityLevelOfTechnology
 *LocationOfAvailibilityOfTechnologyVSflexibility),1/4);
 var sum4Table4=Math.pow((RelaibilityVSlocationOfAvailibilityOfTechnology*RelaibilityVSmaturityLevelOfTechnology
@@ -91,7 +91,7 @@ var ProductQualityImprovementPotentialVSLeadTimeImprovementPotential=document.ge
 var ProductQualityImprovementPotentialVSCostsImprovementPotential=document.getElementById("table5-row5").value;
 var LeadTimeImprovementPotentialVSCostsImprovementPotential=document.getElementById("table5-row6").value;
 var sum1Table5=Math.pow((1/StrategicValVSCostsImprovementPotential*1/ProductQualityImprovementPotentialVSCostsImprovementPotential*
-1/1/LeadTimeImprovementPotentialVSCostsImprovementPotential),1/4);
+1/LeadTimeImprovementPotentialVSCostsImprovementPotential),1/4);
 var sum2Table5=Math.pow((1/StrategicValVSLeadTimeImprovementPotential*1/ProductQualityImprovementPotentialVSLeadTimeImprovementPotential
 *LeadTimeImprovementPotentialVSCostsImprovementPotential),1/4);
 var sum3Table5=Math.pow((1/StrategicValVSProductQualityImprovementPotential*ProductQualityImprovementPotentialVSLeadTimeImprovementPotential
@@ -130,8 +130,8 @@ var cell15 = row1.insertCell(14);
 cell1.innerHTML = "Costs Improvement Potential";
 cell2.innerHTML =sum4/sum;
 cell3.innerHTML =sum1Table5/sumTable5; 
+console.log(sum1Table5/sumTable5);
 cell4.innerHTML =document.getElementById("SLA-row17").value;
-
 cell5.innerHTML =(sum4/sum)*(sum1Table5/sumTable5)*document.getElementById("SLA-row17").value;
 cell6.innerHTML =document.getElementById("SLS-row17").value;
 cell7.innerHTML =(sum4/sum)*(sum1Table5/sumTable5)*document.getElementById("SLS-row17").value
@@ -693,6 +693,7 @@ var cell15 = row17.insertCell(14);
 cell1.innerHTML = "Speed";
 cell2.innerHTML =sum1/sum;
 cell3.innerHTML =sum6Table2/sumTable2; 
+console.log(sum6Table2/sumTable2);
 cell4.innerHTML =document.getElementById("SLA-row1").value;
 cell5.innerHTML =(sum1/sum)*(sum6Table2/sumTable2)*document.getElementById("SLA-row1").value;
 cell6.innerHTML =document.getElementById("SLS-row1").value;

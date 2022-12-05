@@ -18,14 +18,14 @@ var prodCostVSmaxPartSize=document.getElementById("table2-row14").value;
 var priceVSmaxPartSize=document.getElementById("table2-row15").value;
 var sum1Table2=Math.pow((1/speedVSmaxPartSize*1/varietyVSmaxPartSize*1/surfaceFinishVSmaxPartSize*1/prodCostVSmaxPartSize*
   1/priceVSmaxPartSize),1/6);
-var sum2Table2=Math.pow((1/speedVSmaxPartSize*1/varietyVSmaxPartSize*1/surfaceFinishVSmaxPartSize*
-1/prodCostVSmaxPartSize*priceVSmaxPartSize),1/6);
+var sum2Table2=Math.pow((1/speedVSprice*1/varietyVSprice*1/surfaceFinishVSprice*
+1/prodCostVSprice*priceVSmaxPartSize),1/6);
 var sum3Table2=Math.pow((1/speedVSprodCost*1/varietyVSprodCost*1/surfaceFinishVSprodCost *prodCostVSprice
 *prodCostVSmaxPartSize),1/6);
 var sum4Table2=Math.pow((1/speedVSsurfaceFinish*1/varietyVSsurfaceFinish*surfaceFinishVSprodCost*surfaceFinishVSprice
 *surfaceFinishVSmaxPartSize),1/6);
 var sum5Table2=Math.pow((1/speedVSvariety*varietyVSsurfaceFinish*varietyVSprodCost
-*speedVSprice*varietyVSmaxPartSize),1/6);
+*varietyVSprice*varietyVSmaxPartSize),1/6);
 var sum6Table2=Math.pow((speedVSvariety*speedVSsurfaceFinish*speedVSprodCost*speedVSprice*speedVSmaxPartSize),1/6);
 var sumTable2=sum1Table2+sum2Table2+sum3Table2+sum4Table2+sum5Table2;
 
@@ -47,8 +47,8 @@ var sumTable2=sum1Table2+sum2Table2+sum3Table2+sum4Table2+sum5Table2;
   cell3.innerHTML =1/varietyVSmaxPartSize;
   cell4.innerHTML =1/surfaceFinishVSmaxPartSize ;
   cell5.innerHTML = 1/prodCostVSmaxPartSize;
-  cell6.innerHTML = 1;
-  cell7.innerHTML = priceVSmaxPartSize;
+  cell6.innerHTML = 1/priceVSmaxPartSize;
+  cell7.innerHTML = 1;
   cell8.innerHTML =sum1Table2;
   cell9.innerHTML =sum1Table2/sumTable2; 
 
@@ -72,8 +72,8 @@ var sumTable2=sum1Table2+sum2Table2+sum3Table2+sum4Table2+sum5Table2;
   cell3.innerHTML =1/varietyVSprice;
   cell4.innerHTML =1/surfaceFinishVSprice ;
   cell5.innerHTML = 1/prodCostVSprice;
-  cell6.innerHTML = 1/priceVSmaxPartSize;
-  cell7.innerHTML = 1;
+  cell6.innerHTML = 1;
+  cell7.innerHTML =priceVSmaxPartSize ;
   cell8.innerHTML =sum2Table2;
   cell9.innerHTML =sum2Table2/sumTable2; 
   // row2 ended
@@ -160,7 +160,7 @@ var sumTable2=sum1Table2+sum2Table2+sum3Table2+sum4Table2+sum5Table2;
   var cell7 = row6.insertCell(6);
   var cell8 = row6.insertCell(7);
   var cell9 = row6.insertCell(8);
-  cell1.innerHTML = "price";
+  cell1.innerHTML = "speed";
   cell2.innerHTML =1 ;
   cell3.innerHTML =speedVSvariety;
   cell4.innerHTML =speedVSsurfaceFinish;
